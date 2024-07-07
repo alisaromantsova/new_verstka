@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моє місто Київ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <section class="main-page">
+      <div class="wrapper">
+        <img src="img/logo.png" alt="GOIT logo" class="logo" />
+        <div class="main-page-container">
+          <h1 class="main-page-title">Київ</h1>
+
+          <p class="main-page-descr">
+            Наша каштанова столиця.<br />
+
+            Місто засноване 482 року, налічує близько 3 мільйонів сердець та є 7-м за величиною містом Європи. Найширша й, водночас, найкоротша вулиця
+            в усій Європі - Хрещатик.<br />
+
+            Метро Києва - одне з найстаріших в Європі, а станція «Золоті ворота» входить в топ-10 найкрасивіших у світі. Від світанків на Співочому
+            полі, заходів сонця на Дніпрі до неймовірно смачної перепічки - тут усе таке рідне.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscr-form-page">
+      <div class="wrapper">
+        <form action="#" class="subscr-form" id="subscr-form">
+          <h2 class="subscr-form-title">Підпишись на новини міста</h2>
+
+          <div class="subscr-form-row">
+            <button class="subscr-form-btn" type="submit">Підписатися</button>
+            <input type="text" id="user-name" class="subscr-form-input" placeholder="Ім’я" required />
+            <input type="email" id="user-email" class="subscr-form-input" placeholder="Email" required />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="gallery-page">
+      <h2 class="gallery-title">Київ = каштанова столиця</h2>
+      <div class="wrapper">
+        <div class="gallery">
+          <button class="gallery-btn" data-micromodal-trigger="modal-1" data-index="1">
+            <img src="img/1.jpg" alt="Gallery image 1" class="gallery-img" />
+          </button>
+          <button class="gallery-btn" data-micromodal-trigger="modal-1" data-index="2">
+            <img src="img/2.jpg" alt="Gallery image 2" class="gallery-img" />
+          </button>
+          <button class="gallery-btn" data-micromodal-trigger="modal-1" data-index="3">
+            <img src="img/3.jpg" alt="Gallery image 3" class="gallery-img" />
+          </button>
+          <button class="gallery-btn" data-micromodal-trigger="modal-1" data-index="4">
+            <img src="img/4.jpg" alt="Gallery image 4" class="gallery-img" />
+          </button>
+          <button class="gallery-btn" data-micromodal-trigger="modal-1" data-index="5">
+            <img src="img/5.jpg" alt="Gallery image 5" class="gallery-img" />
+          </button>
+          <button class="gallery-btn" data-micromodal-trigger="modal-1" data-index="6">
+            <img src="img/6.jpg" alt="Gallery image 6" class="gallery-img" />
+          </button>
+          <button class="gallery-btn" data-micromodal-trigger="modal-1" data-index="7">
+            <img src="img/7.jpg" alt="Gallery image 7" class="gallery-img" />
+          </button>
+          <button class="gallery-btn" data-micromodal-trigger="modal-1" data-index="8">
+            <img src="img/8.jpg" alt="Gallery image 8" class="gallery-img" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title">Світлини міста Києва</h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <section class="splide" id="splide" aria-label="My city gallery">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="img/1.jpg" alt="My city photo 1" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/2.jpg" alt="My city photo 2" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/3.jpg" alt="My city photo 3" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/4.jpg" alt="My city photo 4" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/5.jpg" alt="My city photo 5" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/6.jpg" alt="My city photo 6" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/7.jpg" alt="My city photo 7" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/8.jpg" alt="My city photo 8" />
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
